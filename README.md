@@ -1,4 +1,15 @@
 # aplikacje-internetowe-ellwart-185ic
 Moja pierwsza aplikacja
+link do heroku:
+https://blog-ellwart.herokuapp.com/
 
-![Strona z funkcjami](https://github.com/EllwartDawid/projektowanie-serwisow-www-ellwart-185ic/blob/master/Lab2/ss/lab2-1.PNG)
+![App](https://github.com/EllwartDawid/aplikacje-internetowe-ellwart-185ic/blob/master/ss/app11.PNG.)
+
+
+![App](https://github.com/EllwartDawid/aplikacje-internetowe-ellwart-185ic/blob/master/ss/app22.PNG.)
+
+
+![App](https://github.com/EllwartDawid/aplikacje-internetowe-ellwart-185ic/blob/master/ss/app33.PNG.)
+
+
+![App](https://github.com/EllwartDawid/aplikacje-internetowe-ellwart-185ic/blob/master/ss/app44.PNG.)
