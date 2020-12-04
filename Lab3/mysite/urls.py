@@ -23,9 +23,9 @@ urlpatterns = [
     path('konto', include('konto.urls')),
     path('konto/', include('django.contrib.auth.urls')),
     path('konto/home', TemplateView.as_view(template_name='home.html')),
+
+    path('oauth/',include('social_django.urls', namespace='social')),
     
     path('', TemplateView.as_view(template_name='home.html'), name='home'),
-    
-    path('oauth/',include('social_django.urls', namespace='social')),
 
 ]
