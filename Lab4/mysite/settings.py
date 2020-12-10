@@ -38,8 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
+    # dodanie aplikacji zewnętrznej
     'rest_framework',
+    #swagger
     'drf_yasg',
 
     'django_filters',
@@ -138,6 +139,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 # DRF
+#zezwalanie dostępu
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
         #'rest_framework.permissions.AllowAny',
@@ -149,5 +151,6 @@ REST_FRAMEWORK = {
             # 'rest_framework.authentication.BasicAuthentication',
             'rest_framework.authentication.TokenAuthentication', 
         ],
+     #backend filtrujący   
     'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend',],
 }

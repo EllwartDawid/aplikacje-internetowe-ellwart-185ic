@@ -14,7 +14,7 @@ from rest_framework.routers import SimpleRouter
     # path('', PostList.as_view()),
 
 # ]
-
+# router zastępuje urlpatterns
 router = SimpleRouter()
 router.register('', FriendViewset, basename='friendset')
 router.register('', BelongingViewset, basename='belongingset')

@@ -6,6 +6,8 @@ from rest_framework import filters
 class FriendViewset(viewsets.ModelViewSet):
     queryset = models.Friend.objects.all()
     serializer_class = serializers.FriendSerializer
+    #SeatchFilter umożliwia wyszukiwanie
+    #OrderingFilter umożliwia filtracje np roznąco lub malejąco
     filter_backends = [filters.SearchFilter, filters.OrderingFilter]
     search_fields = ['title']
 
