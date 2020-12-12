@@ -1,5 +1,5 @@
 
-Pierwczą czynnością do wykonania było zrealizowanie przykładów z zajęć
+Pierwczą czynnością do wykonania było zrealizowanie przykładów z zajęć. 
 Aby je wykonać trzebab było dodać funkcję return render()
 
 ![returnrender](https://github.com/EllwartDawid/aplikacje-internetowe-ellwart-185ic/blob/master/Lab5/ss/returnrender.PNG)
