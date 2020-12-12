@@ -10,7 +10,7 @@ Wygląd formularza przed wyszukaniem elementu
 
 ![App](https://github.com/EllwartDawid/aplikacje-internetowe-ellwart-185ic/blob/master/Lab5/ss/scrappingprzed.PNG)
 
-Stworzona funkcja szuka podanych znaczników na stronie o podanym adresie
+Stworzona funkcja szuka podanych znaczników na stronie o podanym adresie. 
 Wyniki wyszukiwania dla strony https://zacniewski.gitlab.io/ i znaczników div
 
 ![App](https://github.com/EllwartDawid/aplikacje-internetowe-ellwart-185ic/blob/master/Lab5/ss/scrappingpo.PNG)
