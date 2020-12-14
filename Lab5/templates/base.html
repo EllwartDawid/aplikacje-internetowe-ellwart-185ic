@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+</head>
+
+<body>
+  <!-- Nawigacja -->
+  <nav class="navbar navbar-expand-sm bg-info navbar-dark" style="font-family:'Bevan'">
+    <div class="navbar-nav">
+      <a class="nav-link active" href="/">Przykłady z zajęć</a>
+      <a class="nav-link" href="/scrapped/">Scraping</a>
+      <a class="nav-link" href="/xpath/">XPath i xmlx</a>
+    </div>
+  </nav>
+  <p class="display-2"></p>
+  <div class="container">
+    <div class="row justify-content-center">
+      <main>
+        <!-- Zawartość bloków szablonów -->
+        {% block content %}
+        {% endblock %}
+      </main>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+</body>
+
+</html>

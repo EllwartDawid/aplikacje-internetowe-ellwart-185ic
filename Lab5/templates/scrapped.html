@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <html>
+        <head>
+            <title>Scraping</title>
+        </head>
+    <body>
+        <form method="POST" >
+            {% csrf_token %}
+            <div>
+                <div>
+                    <h3>Wpisz url</h3>
+                    <input type="text" name="web_link" required><br>
+                <div>
+                    <h5>Podaj szukany elemnt</h5>
+                    <input type="text" name="element" required>
+                </div>
+            <br>
+                <div>
+                    <button type="submit" class="btn btn-primary">Szukaj</button>
+                </div>
+            </div>                   
+        </form>
+            <div>
+            <p>Zakończono scrapowanie strony: <br><b>{{ url }}</b></p><br>
+            <p>Szukany element: <b>{{ element }}</b></p><br>
+            <p>Znaleziono <b>{{amount}}</b> elemntów</p><br>
+            </div>
+
+
+            {% for i in all_elements %}
+            <li class="list-group-item">
+                <b>Id</b> -> {{i.find_id}} <br>                
+                <b>Class</b>> -> {{i.find_class}} <br>                
+                <b>Link</b> -> {{i.find_href}} <br>                          
+                <b>Text</b> -> {{i.get_text}} <br>
+                <b>Src</b> -> {{i.find_src}}<br>
+                <b>Alt</b> -> {{i.find_alt}}<br>               
+            </li>
+            {% endfor %}
+    
+    </body>
+    </html>
+{% endblock %}
