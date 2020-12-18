@@ -7,7 +7,7 @@
  
  Dzięki pakietowi Django-rest-auth dodany został widok dla logowania/wylogowania, resetu hasła/potwierdzeniu resetu hasła 
  
- Aby panel rejstracji działał poprawnie należy dodać w pliku setting.py nastepujący kod
+ Aby panel rejstracji działał należy wprowadzić zmiany w pliku setting.py. 
  Jeżeli ustawimy TokenAuthentication to dostęp będą mieli tylko użytkownicy z tokenem
  
  ![App](https://github.com/EllwartDawid/aplikacje-internetowe-ellwart-185ic/blob/master/Lab6/ss/dostęp.PNG)
