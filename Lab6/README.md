@@ -1,36 +1,87 @@
 
- REST API z DRF
+ Zezwolenia i uwierzytelnianie w DRF
  
- Widok api/v1 dla nie zalogowanych
+ Stworzyłem dwie aplikacje
+- posts
+- rental
+ 
+ Dzięki pakietowi Django-rest-auth dodany został widok dla logowania/wylogowania, resetu hasła/potwierdzeniu resetu hasła 
+ 
+ Aby panel rejstracji działał poprawnie należy dodać w pliku setting.py nastepujący kod
+ Jeżeli ustawimy TokenAuthentication to dostęp będą mieli tylko użytkownicy z tokenem
+ 
+ ![App](https://github.com/EllwartDawid/aplikacje-internetowe-ellwart-185ic/blob/master/Lab6/ss/dostęp.PNG)
+ 
+ Stworzenie viewsetów:
+ 
+ ![App](https://github.com/EllwartDawid/aplikacje-internetowe-ellwart-185ic/blob/master/Lab6/ss/userviewset.PNG)
+ 
+ ![App](https://github.com/EllwartDawid/aplikacje-internetowe-ellwart-185ic/blob/master/Lab6/ss/userviewset1.PNG)
+ 
+ Routers:
+ 
+ ![App](https://github.com/EllwartDawid/aplikacje-internetowe-ellwart-185ic/blob/master/Lab6/ss/routers.PNG)
+ 
+ ![App](https://github.com/EllwartDawid/aplikacje-internetowe-ellwart-185ic/blob/master/Lab6/ss/routers1.PNG)
+ 
+ Licznik wizyt z użyciem cookies
+ 
+ ![App](https://github.com/EllwartDawid/aplikacje-internetowe-ellwart-185ic/blob/master/Lab6/ss/ciasteczkakod.PNG)
+ 
+ ![App](https://github.com/EllwartDawid/aplikacje-internetowe-ellwart-185ic/blob/master/Lab6/ss/ciasteczka.PNG)
+ 
+ Widoki działania aplikacji:
+ 
+ Lista użytkowników:
+ 
+ ![App](https://github.com/EllwartDawid/aplikacje-internetowe-ellwart-185ic/blob/master/Lab6/ss/listaużytkowników.PNG)
+ 
+ Konkretny użytkownik:
+ 
+ ![App](https://github.com/EllwartDawid/aplikacje-internetowe-ellwart-185ic/blob/master/Lab6/ss/user1.PNG)
+ 
+ Widok login:
 
-![App](https://github.com/EllwartDawid/aplikacje-internetowe-ellwart-185ic/blob/master/Lab4/ss/ss1.PNG)
+![App](https://github.com/EllwartDawid/aplikacje-internetowe-ellwart-185ic/blob/master/Lab6/ss/login.PNG)
 
-Widok api/v1 po zalogowaniu. Możemy zobaczyć szczegóły
+ Widok logout:
 
-![App](https://github.com/EllwartDawid/aplikacje-internetowe-ellwart-185ic/blob/master/Lab4/ss/ss2.PNG)
+![App](https://github.com/EllwartDawid/aplikacje-internetowe-ellwart-185ic/blob/master/Lab6/ss/logout.PNG)
 
-Widok zalogowanego użytkownika po wybraniu konkretnego postu. Może go edytować i usunąć
+ Widok Password Reset:
 
-![App](https://github.com/EllwartDawid/aplikacje-internetowe-ellwart-185ic/blob/master/Lab4/ss/ss3.PNG)
+![App](https://github.com/EllwartDawid/aplikacje-internetowe-ellwart-185ic/blob/master/Lab6/ss/passwordreset.PNG)
 
-Widok api/v2 dla nie zalogowanych
+ Widok Password Reset Confirm:
 
-![App](https://github.com/EllwartDawid/aplikacje-internetowe-ellwart-185ic/blob/master/Lab4/ss/ss4.PNG)
+![App](https://github.com/EllwartDawid/aplikacje-internetowe-ellwart-185ic/blob/master/Lab6/ss/passwordresetconfirm.PNG)
 
-Widok api/v1 po zalogowaniu. Możemy zobaczyć szczegóły tak jak w api/v1
+ Widok rejestracji nowego użytkownika:
 
-![App](https://github.com/EllwartDawid/aplikacje-internetowe-ellwart-185ic/blob/master/Lab4/ss/ss5.PNG)
+![App](https://github.com/EllwartDawid/aplikacje-internetowe-ellwart-185ic/blob/master/Lab6/ss/registration.PNG)
 
-W api/v2 dodatkowo została dodana opcja filtrowania
+ Tworzę nowego użytkownika:
 
-![App](https://github.com/EllwartDawid/aplikacje-internetowe-ellwart-185ic/blob/master/Lab4/ss/ss6.PNG)
+![App](https://github.com/EllwartDawid/aplikacje-internetowe-ellwart-185ic/blob/master/Lab6/ss/dawidtest.PNG)
 
-Swagger przedstawiający obie aplikacje
+ Utworzono konto i wygenerowano key czyli token dla nowego użytkownika:
 
-![App](https://github.com/EllwartDawid/aplikacje-internetowe-ellwart-185ic/blob/master/Lab4/ss/ss7.PNG)
+![App](https://github.com/EllwartDawid/aplikacje-internetowe-ellwart-185ic/blob/master/Lab6/ss/utworzonekonto.PNG)
 
-Redoc
+ Teraz użytkownik może się zalogować:
 
-![App](https://github.com/EllwartDawid/aplikacje-internetowe-ellwart-185ic/blob/master/Lab4/ss/ss8.PNG)
+![App](https://github.com/EllwartDawid/aplikacje-internetowe-ellwart-185ic/blob/master/Lab6/ss/logindawidtest.PNG)
+
+ Nowy użytkownik po zalogowaniu:
+
+![App](https://github.com/EllwartDawid/aplikacje-internetowe-ellwart-185ic/blob/master/Lab6/ss/loginaccept.PNG)
+
+ Użytkownik został dodany do listy użytkowników:
+
+![App](https://github.com/EllwartDawid/aplikacje-internetowe-ellwart-185ic/blob/master/Lab6/ss/listaużytkowników1.PNG)
+
+ W panelu admina można zobaczyć token nowego użytkownika:
+
+![App](https://github.com/EllwartDawid/aplikacje-internetowe-ellwart-185ic/blob/master/Lab6/ss/token.PNG)
 
 
